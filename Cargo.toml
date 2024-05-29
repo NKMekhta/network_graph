@@ -1,0 +1,8 @@
+[workspace]
+members = ["egui_node_graph", "netgraph"]
+resolver = "2"
+
+[workspace.dependencies]
+eframe = { version = "0.27.2" }
+
+

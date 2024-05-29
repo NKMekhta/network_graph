@@ -1,0 +1,16 @@
+[package]
+name = "netgraph"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+egui_node_graph = { path = "../egui_node_graph" }
+eframe = { workspace = true }
+anyhow = "1.0"
+serde = { version = "1.0", features = ["derive"] }
+serde_json = "1.0"
+ipnetwork = "0.20.0"
+nftables = "0.4.0"
+hocon = "0.9.0"
+derive_more = { version = "1.0.0-beta.6", features = ["is_variant", "constructor"] }
+rfd = { version = "0.14.1", features = ["xdg-portal"] }
