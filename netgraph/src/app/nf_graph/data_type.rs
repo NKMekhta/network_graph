@@ -22,7 +22,7 @@ pub enum NFDirection {
     Outgoing,
 }
 
-#[derive(Constructor)]
+#[derive(Constructor, Serialize, Deserialize)]
 pub struct DataType {
     family: NFFamily,
     pub(crate) direction: NFDirection,

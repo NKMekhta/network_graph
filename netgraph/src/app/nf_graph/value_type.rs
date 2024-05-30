@@ -1,4 +1,6 @@
-#[derive(Default)]
+use serde::{Deserialize, Serialize};
+
+#[derive(Default, Serialize, Deserialize)]
 pub struct ValueType;
 
 impl egui_node_graph::WidgetValueTrait for ValueType {

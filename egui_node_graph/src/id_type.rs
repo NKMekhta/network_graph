@@ -40,12 +40,3 @@ impl From<InputId> for AnyParameterId {
         Self::Input(input)
     }
 }
-
-impl serde::Serialize for NodeId {
-    fn serialize<S>(&self, serializer: S) -> Result<S::Ok, S::Error>
-    where
-        S: serde::Serializer,
-    {
-        serializer.serialize_u64(self.0.as_ffi())
-    }
-}

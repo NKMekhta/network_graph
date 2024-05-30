@@ -1111,6 +1111,15 @@ dependencies = [
 ]
 
 [[package]]
+name = "egui-notify"
+version = "0.14.0"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "319327faee7bb116bcdbe43af1b8cbea06dc5d9ddbb23d35e012949afbd76cde"
+dependencies = [
+ "egui",
+]
+
+[[package]]
 name = "egui-wgpu"
 version = "0.27.2"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -2159,6 +2168,12 @@ dependencies = [
 ]
 
 [[package]]
+name = "map-macro"
+version = "0.3.0"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "fb950a42259642e5a3483115aca87eebed2a64886993463af9c9739c205b8d3a"
+
+[[package]]
 name = "memchr"
 version = "2.7.2"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -2291,13 +2306,16 @@ dependencies = [
  "anyhow",
  "derive_more",
  "eframe",
+ "egui-notify",
  "egui_node_graph",
  "hocon",
  "ipnetwork",
+ "map-macro",
  "nftables",
  "rfd",
  "serde",
  "serde_json",
+ "tap",
 ]
 
 [[package]]
@@ -3348,6 +3366,12 @@ dependencies = [
  "core-foundation-sys",
  "libc",
 ]
+
+[[package]]
+name = "tap"
+version = "1.0.1"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "55937e1799185b12863d447f42597ed69d9928686b8d88a1df17376a097d8369"
 
 [[package]]
 name = "tempfile"

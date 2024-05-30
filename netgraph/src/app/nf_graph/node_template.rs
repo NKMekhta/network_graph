@@ -142,7 +142,7 @@ impl NFNodeData {
             DataType::new(node.input.family, node.input.direction),
             ValueType,
             egui_node_graph::InputParamKind::ConnectionOnly,
-            false,
+            true,
         );
 
         for (name, output) in &node.outputs {
