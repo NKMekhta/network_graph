@@ -6,7 +6,7 @@ Node connections represent packet flow. Nodes split packet flow or apply actions
 Output ports can only have one connection. Input ports can have multiple.  Only nodes that can be reached from source are evaluated. Looping connections are broken automatically.
 
 Upon launch/creation of a new node graph you will be presented with two permanent nodes: Source and Localhost. Source is where all incoming packets start from. Localhost is a local machine.
-![ui_default](https://github.com/NKMekhta/network_graph/assets/ui_empty.png)
+![ui_default](https://github.com/NKMekhta/network_graph/assets/ui_default.png)
 Use RMB to trigger a node selector. Search and click a node name to create a node at cursor. Move nodes by dragging them by header. Move groups of nodes by selecting them with mouse drag over an area and dragging one by the header.
 ![ui_demo](https://github.com/NKMekhta/network_graph/assets/ui_demo.png)
 Connect nodes by dragging a mouse cursor from port to port. If input port is dragged while output port is occupied, ongoing connection will not happen. If output port is dragged, it will disconnect.
